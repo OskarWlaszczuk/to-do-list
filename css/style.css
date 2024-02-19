@@ -11,4 +11,9 @@ html {
     margin: auto;
     padding: 20px;
     width: 1200px;
+    background-color: #8080801f;
+}
+
+.mainHeader {
+    margin: auto;
 }
