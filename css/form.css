@@ -11,3 +11,18 @@
     padding: 10px;
     padding-bottom: 20px;
 }
+
+.form__input {
+    width: 75%;
+    border: 2px solid #00000026;
+    padding: 10px;
+    margin: 10px;
+}
+
+.form__button {
+    width: 20%;
+    padding: 10px;
+    color: white;
+    background-color: teal;
+    border: none;
+}
