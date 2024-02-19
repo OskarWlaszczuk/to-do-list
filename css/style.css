@@ -5,3 +5,10 @@ html {
 *, ::after, ::before {
     box-sizing: inherit;
 }
+
+.body {
+    font-family: 'Lexend Deca', sans-serif;
+    margin: auto;
+    padding: 20px;
+    width: 1200px;
+}
