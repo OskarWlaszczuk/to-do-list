@@ -7,7 +7,7 @@
         for (const task of tasks) {
             htmlString += `
                 <li class='tasksList__listItem ${task.done === true ? 'tasksList__listItem--done' : ""}'>
-                <button>✔</button> ${task.content} <button>X</button>
+                <button class = 'tasksList__buton tasksList__buton--done'>✔</button> ${task.content} <button class = 'tasksList__buton tasksList__buton--remove'>X</button>
                 </li>`
         };
 
