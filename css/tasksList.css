@@ -13,3 +13,15 @@
     padding: 10px;
     padding-bottom: 20px;
 }
+
+.tasksList__listItem {
+    text-align: left;
+    box-shadow: 2px 2px 2px 2px #cacaad;
+    margin: 15px;
+    line-height: 1.7;
+    padding: 10px;
+}
+
+.tasksList__listItem--done {
+    text-decoration: line-through;
+}
