@@ -28,7 +28,8 @@
 }
 
 .tasksList__button {
-    width: auto;
+    width: 5%;
+    height: 5%;
     border: none;
     border-radius: 5px;
     font-weight: 900;
