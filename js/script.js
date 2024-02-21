@@ -22,8 +22,8 @@
             });
         });
 
-        const toggleDoneButtons = document.querySelectorAll(".js-taskDoneButton");
-        toggleDoneButtons.forEach((toggleDoneButtons, taskIndex) => {
+        const toggleDoneButtonsElements = document.querySelectorAll(".js-taskDoneButton");
+        toggleDoneButtonsElements.forEach((toggleDoneButtons, taskIndex) => {
             toggleDoneButtons.addEventListener("click", () => {
                 toggleTaskDone(taskIndex);
             });
@@ -35,10 +35,10 @@
         let htmlString = "";
         for (const task of tasks) {
             htmlString += `
-            <li class='tasksList__listItem ${task.done === true ? 'tasksList__listItem--done' : ""}' 
-       >
-           <button class = "tasksList__button tasksList__button--done js-taskDoneButton">✔</button> 
-           ${task.content} <button class = "tasksList__button tasksList__button--remove js-removeButton">X</button>
+            <li class='tasksList__listItem ${task.done === true ? 'tasksList__listItem--done' : ""}'>
+                <button class = "tasksList__button tasksList__button--done js-taskDoneButton" ></button >
+                     ${task.content}
+                <button class="tasksList__button tasksList__button--remove js-removeButton">X</button>
             </li >
         `;
         };
