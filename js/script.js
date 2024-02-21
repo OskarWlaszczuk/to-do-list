@@ -2,16 +2,49 @@
     const tasks = [];
 
 
+    const removeTask = (taskIndex) => {
+        tasks.splice(taskIndex, 1);
+        render();
+    };
+
+
+    const toggleTaskDone = (taskIndex) => {
+        tasks[taskIndex].done = !tasks[taskIndex].done;
+        render();
+    };
+
+
+    const callEvents = () => {
+        const removeButtonElement = document.querySelectorAll(".js-removeButton");
+        removeButtonElement.forEach((removeButtonElement, taskIndex) => {
+            removeButtonElement.addEventListener("click", () => {
+                removeTask(taskIndex);
+            });
+        });
+
+        const toggleDoneButtons = document.querySelectorAll(".js-taskDoneButton");
+        toggleDoneButtons.forEach((toggleDoneButtons, taskIndex) => {
+            toggleDoneButtons.addEventListener("click", () => {
+                toggleTaskDone(taskIndex);
+            });
+        });
+    };
+
+
     const render = () => {
         let htmlString = "";
         for (const task of tasks) {
             htmlString += `
-                <li class='tasksList__listItem ${task.done === true ? 'tasksList__listItem--done' : ""}'>
-                <button class = 'tasksList__buton tasksList__buton--done'>✔</button> ${task.content} <button class = 'tasksList__buton tasksList__buton--remove'>X</button>
-                </li>`
+            <li class='tasksList__listItem ${task.done === true ? 'tasksList__listItem--done' : ""}' 
+       >
+           <button class = "tasksList__button tasksList__button--done js-taskDoneButton">✔</button> 
+           ${task.content} <button class = "tasksList__button tasksList__button--remove js-removeButton">X</button>
+            </li >
+        `;
         };
-
         document.querySelector(".js-tasksList").innerHTML = htmlString;
+
+        callEvents();
     };
 
 
@@ -19,7 +52,7 @@
         tasks.push(
             {
                 content: newTaskContent,
-            },
+            }
         );
 
         render();
@@ -33,7 +66,7 @@
         if (newTaskContent === "") {
             return;
         }
-        addNewTaskContent(newTaskContent)
+        addNewTaskContent(newTaskContent);
     };
 
 
