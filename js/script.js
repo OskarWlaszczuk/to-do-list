@@ -44,6 +44,13 @@
         };
         document.querySelector(".js-tasksList").innerHTML = htmlString;
 
+        document.querySelector(".js-statsAllTasks").innerHTML = `
+        Liczba wszystkich zadań: <span class='tasksList__stats--statsNumber'>${tasks.length}</span>
+        `;
+
+        document.querySelector(".js-statsDoneTasks").innerHTML = `
+        Liczba ukończonych zadań: <span class='tasksList__stats--statsNumber'>${tasks.filter(task => task.done).length}</span>
+        `;
         callEvents();
     };
 
