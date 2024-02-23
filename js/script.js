@@ -1,18 +1,25 @@
 {
     const tasks = [];
 
+    const renderStats = () => {
+        document.querySelector(".js-statsAllTasks").innerHTML = `
+            Liczba wszystkich zadań: <span class='tasksList__stats--statsNumber'>${tasks.length}</span>
+        `;
+
+        document.querySelector(".js-statsDoneTasks").innerHTML = `
+            Liczba ukończonych zadań: <span class='tasksList__stats--statsNumber'>${tasks.filter(task => task.done).length}</span>
+        `;
+    };
 
     const removeTask = (taskIndex) => {
         tasks.splice(taskIndex, 1);
         render();
     };
 
-
     const toggleTaskDone = (taskIndex) => {
         tasks[taskIndex].done = !tasks[taskIndex].done;
         render();
     };
-
 
     const callEvents = () => {
         const removeButtonElement = document.querySelectorAll(".js-removeButton");
@@ -30,7 +37,6 @@
         });
     };
 
-
     const render = () => {
         let htmlString = "";
         for (const task of tasks) {
@@ -42,15 +48,10 @@
             </li >
         `;
         };
+
         document.querySelector(".js-tasksList").innerHTML = htmlString;
 
-        document.querySelector(".js-statsAllTasks").innerHTML = `
-        Liczba wszystkich zadań: <span class='tasksList__stats--statsNumber'>${tasks.length}</span>
-        `;
-
-        document.querySelector(".js-statsDoneTasks").innerHTML = `
-        Liczba ukończonych zadań: <span class='tasksList__stats--statsNumber'>${tasks.filter(task => task.done).length}</span>
-        `;
+        renderStats();
         callEvents();
     };
 
