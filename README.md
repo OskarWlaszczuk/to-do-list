@@ -20,3 +20,6 @@ Here is my personal project of *To-Do List*, that will easly help you to keep in
     - *BEM Convention*
     - Mobile-first 
     - Open Graph Protocol
+
+## Try Demo of *To-Do List*
+[To-Do List](https://oskarwlaszczuk.github.io/to-do-list/)
