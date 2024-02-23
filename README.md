@@ -1,5 +1,13 @@
 # *To-Do List* project
 
+## Sections In This README:
+- [Description](#Description)
+- [Context Of My Project](#Context-Of-My-Project)
+- [Programming Languages & Conventions:](#Programming-Languages-Conventions)
+    - [Languages](#Languages)
+    - [Conventions](#Conventions)
+- [Try Demo of *To-Do List*](#Try-Demo-of-To-Do-List)
+
 ## Description: 
 Here is my personal project of *To-Do List*, that will easly help you to keep in mind small, yet important things. Relieve your daily-routine life from remembering about appointments, meetings with your firends or specific shopping products you have to buy! 
 
