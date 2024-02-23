@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/tasksList.css">
+    <link rel="stylesheet" href="css/grid.css">
     <script defer src="js/script.js"></script>
 </head>
 
@@ -21,21 +22,31 @@
 Add OG Protocol -->
 
 <body class="body">
-    <h1 class="mainHeader">Lista zadań</h1>
-    <form class="form__container js-form">
-        <h2 class="form__header">Dodaj nowe zadanie</h2>
-        <input required minlength="1" maxlength="350" class="form__input js-addNewTask__input" name="task" type="text"
-            placeholder="Co jest do zrobienia?"> <button class="form__button js-saveTask__button">Dodaj
-            zadanie</button>
-    </form>
-    <div class="tasksList__container">
-        <h2 class="tasksList__header">Lista zadań</h2>
-        <div class="tasksList__grid">
-            <div class="tasksList__stats js-statsAllTasks"></div>
-            <div class="tasksList__stats js-statsDoneTasks"></div>
+
+    <div class="grid__conteiner">
+        <h1 class="mainHeader">Lista zadań</h1>
+        <div class="grid__formContainer">
+            <form class="form__container js-form">
+                <h2 class="form__header">Dodaj nowe zadanie</h2>
+                <div class="form__grid">
+                    <input required minlength="1" maxlength="350" class="form__input js-addNewTask__input" name="task"
+                        type="text" placeholder="Co jest do zrobienia?">
+                    <button class="form__button js-saveTask__button">
+                        Dodaj zadanie
+                    </button>
+                </div>
+            </form>
         </div>
-        <ul class="js-tasksList"></ul>
+        <div class="tasksList__container">
+            <h2 class="tasksList__header">Lista zadań</h2>
+            <div class="tasksList__gridStats">
+                <div class="tasksList__stats js-statsAllTasks"></div>
+                <div class="tasksList__stats js-statsDoneTasks"></div>
+            </div>
+            <ul class="tasksList__unOrderedList js-tasksList"></ul>
+        </div>
     </div>
+
 </body>
 
 </html>
