@@ -16,7 +16,7 @@ Here is my personal project of *To-Do List*, that will easly help you to keep in
 
 ### Try Demo of *To-Do List*
 
-[To-Do List](https://oskarwlaszczuk.github.io/to-do-list/)
+[To-Do List](https://github.com/OskarWlaszczuk/to-do-list/blob/main/images/projectScreenshot.png?raw=true)
 
 ![Screenshot of project](https://github.com/OskarWlaszczuk/to-do-list/blob/main/images/2024-02-23.png?raw=true)
 
