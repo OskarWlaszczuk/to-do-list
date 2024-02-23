@@ -7,10 +7,10 @@ html {
 }
 
 .body {
+    max-width: 1200px;
     font-family: 'Lexend Deca', sans-serif;
     margin: auto;
     padding: 20px;
-    width: 1200px;
     background-color: #8080801f;
 }
 
