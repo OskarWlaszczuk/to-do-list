@@ -41,9 +41,9 @@
         let htmlString = "";
         for (const task of tasks) {
             htmlString += `
-            <li class='tasksList__listItem ${task.done ? 'tasksList__listItem--done' : ""}'>
+            <li class='tasksList__listItem'>
                 <button class = "tasksList__button tasksList__button--done js-taskDoneButton">${task.done ? '✔' : ''}</button >
-                     ${task.content}
+                   <span class ='${task.done ? 'tasksList__listItem--done' : ""}'>${task.content}</span>
                 <button class="tasksList__button tasksList__button--remove js-removeButton">X</button>
             </li >
         `;
