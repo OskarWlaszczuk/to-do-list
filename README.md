@@ -42,10 +42,10 @@ Here is my personal project of *To-Do List*, that will easly help you to keep in
 
 **1**. **First** of all you have to write your task in the form input, thats length must be between 1 to 350 letters. 
 
-**2**. **Then** you have to click button **teal button** named *"Dodaj zadanie"* (eng. "*Add new task*")
+**2**. **Then** you have to click **teal button** named *"Dodaj zadanie"* (eng. "*Add new task*")
 
 - Your tasks will be ordered under header of tasks list section named *"Lista zadań"* (eng. *"Tasks list"*). 
-    - You can also check number of all tasks and tasks you have already finished. 
+    - You can also check number of all tasks and tasks, that you have already finished. 
 
 **Every task will be displayed between two buttons:**
 - **the green one**, that is responsible for checking the finished tasks
