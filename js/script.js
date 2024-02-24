@@ -1,7 +1,7 @@
 {
     const tasks = [];
 
-    const renderStats = () => {
+    const showStats = () => {
         document.querySelector(".js-statsAllTasks").innerHTML = `
             Liczba wszystkich zadań: <span class='tasksList__stats--statsNumber'>${tasks.length}</span>
         `;
@@ -51,7 +51,7 @@
 
         document.querySelector(".js-tasksList").innerHTML = htmlString;
 
-        renderStats();
+        showStats();
         callEvents();
     };
 
