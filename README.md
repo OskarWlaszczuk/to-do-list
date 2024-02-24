@@ -18,7 +18,7 @@ Here is my personal project of *To-Do List*, that will easly help you to keep in
 
 [To-Do List](https://oskarwlaszczuk.github.io/to-do-list/)
 
-![Screenshot of project](https://github.com/OskarWlaszczuk/to-do-list/blob/main/images/projectScreenshot.png?raw=true)
+![Screenshot of project](https://github.com/OskarWlaszczuk/to-do-list/blob/main/images/project-screenshot.png?raw=true)
 
 ### Context Of My Project
 *To-Do List* is a part of practise task, that I'm doin' within *YouCode* Programming course. This project is perfect opportunity for me to check my possibilities in *HTML*, *CSS* or *JS* languages.
