@@ -23,15 +23,13 @@
         content="https://t3.ftcdn.net/jpg/04/58/05/78/360_F_458057874_tQNcZPZfN5JEn8qJExwOc2g25fMaAsxZ.jpg" />
     <meta property="og:description" content="Twórz własną listę zadań" />
     <meta property="og:url" content="https://oskarwlaszczuk.github.io/to-do-list/" />
-
 </head>
 
 <body class="body">
-
-    <div class="grid__conteiner">
+    <div class="grid">
         <h1 class="mainHeader">Lista zadań</h1>
         <div class="grid__formContainer">
-            <form class="form__container js-form">
+            <form class="form js-form">
                 <h2 class="form__header">Dodaj nowe zadanie</h2>
                 <div class="form__grid">
                     <input minlength="1" maxlength="350" class="form__input js-addNewTask__input" name="task"
@@ -42,7 +40,7 @@
                 </div>
             </form>
         </div>
-        <div class="tasksList__container">
+        <div class="tasksList">
             <h2 class="tasksList__header">Lista zadań</h2>
             <div class="tasksList__gridStats">
                 <div class="tasksList__stats js-statsAllTasks"></div>
@@ -51,7 +49,6 @@
             <ul class="tasksList__unOrderedList js-tasksList"></ul>
         </div>
     </div>
-
 </body>
 
 </html>
