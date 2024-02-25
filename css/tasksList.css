@@ -1,4 +1,4 @@
-.tasksList__container {
+.tasksList {
     width: 100%;
     background-color: white;
     margin: 10px auto;
@@ -35,6 +35,12 @@
     padding: 15px;
     box-shadow: 2px 2px 2px 2px #cacaad;
     width: min-content;
+    transition: 1s;
+}
+
+.tasksList__stats:hover {
+    box-shadow: 2px 2px 2px 2px #7e7e72;
+    transform: translateX(5%);
 }
 
 .tasksList__gridStats {
@@ -60,19 +66,25 @@
 .tasksList__button--done {
     background-color: green;
     color: white;
+    transition: 1s;
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
 .tasksList__button--done:hover {
     background-color: rgb(37, 162, 37);
+    transform: scale(120%);
 }
 
 .tasksList__button--remove {
     background-color: crimson;
     color: white;
+    transition: 1s;
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
 .tasksList__button--remove:hover {
     background-color: rgb(255, 67, 105);
+    transform: scale(120%);
 }
 
 .tasksList__unOrderedList {
