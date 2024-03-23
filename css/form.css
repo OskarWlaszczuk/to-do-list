@@ -46,5 +46,5 @@
 
 .form__button:hover {
     background-color: hsl(180, 100%, 35%);
-    transform: scale(0.9);
+    transform: scaleX(103%) scaleY(105%);
 }
